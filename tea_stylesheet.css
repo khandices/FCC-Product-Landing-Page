@@ -17,6 +17,12 @@ font-family: "Playfair Display", serif;
 letter-spacing: 2px;
 text-shadow: 2px 1px 3px #23201a;
 }
+header section {
+    display: flex;
+}
+#header-img {
+    max-width: 80px;
+}
 
 #nav-bar {
 top: 0px;
@@ -25,14 +31,15 @@ position: fixed;
 
 #nav-bar ul {
 display: flex;
-flex-direction: row;
 list-style: none;
+justify-content: space-between;
+border: solid red;
 }
 
 #nav-bar li {
-display: flex;
 justify-content: space-between;
 }
+
 #nav-bar a {
 color: #777658;
 font-size: 20px;
@@ -105,9 +112,6 @@ height: 230px;
 #sign-up {
 margin: 100px;
 text-align: center;
-}
-
-#submit {
 }
 
 button {
