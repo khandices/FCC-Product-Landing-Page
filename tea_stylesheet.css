@@ -1,8 +1,10 @@
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
 .welcome-blurb {
 color: purple;
 }
-}
+} */
+
+
 h1 {
 font-size: 50px;
 text-align: center;
@@ -16,32 +18,27 @@ height: 300px;
 font-family: "Playfair Display", serif;
 letter-spacing: 2px;
 text-shadow: 2px 1px 3px #23201a;
-}
-header section {
+} 
+
+#navigation {
     display: flex;
 }
 #header-img {
-    max-width: 80px;
+    max-width: 100px;
+
 }
 
 #nav-bar {
 top: 0px;
-position: fixed;
+margin-left: auto;
 }
 
 #nav-bar ul {
 display: flex;
 list-style: none;
-justify-content: space-between;
-border: solid red;
 }
 
 #nav-bar li {
-justify-content: space-between;
-}
-
-#nav-bar a {
-color: #777658;
 font-size: 20px;
 text-align: center;
 padding: 14px 16px;
@@ -49,6 +46,15 @@ text-decoration: none;
 list-style-type: none;
 display: flex;
 background-color: white;
+}
+
+#nav-bar li:hover {
+text-decoration: underline;
+}
+
+#nav-bar a {
+text-decoration: none;
+color: #777658;
 }
 
 #main-section {
@@ -118,7 +124,7 @@ button {
 background-color: white;
 border: 1px solid;
 border-color: orange;
-border-radius: 2px;
+border-radius: 5px;
 padding: 9px 11px;
 margin: 7px 0px;
 }
@@ -127,6 +133,7 @@ button:hover {
 cursor: pointer;
 color: orange;
 transition: all 150ms ease-in-out;
+box-shadow: 0px 3px 10px 0px orange;
 }
 
 input[type="email"] {
@@ -138,13 +145,14 @@ input[type="submit"] {
 background-color: white;
 border: 1px solid;
 border-color: orange;
-border-radius: 2px;
+border-radius: 5px;
 padding: 9px 11px;
 }
 input[type="submit"]:hover {
 cursor: pointer;
 color: orange;
 transition: all 150ms ease-in-out;
+box-shadow: 0px 3px 10px 0px orange;
 }
 
 footer {
